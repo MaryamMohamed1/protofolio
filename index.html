@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Maryam <span>Mohamed</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars Hamburg" onclick="Hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#Home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+                <a href="#Skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Skills</a>
+                <a href="#About" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">About</a>
+                <a href="#Projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Projects</a>
+                <a href="#Contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Hey I'm <span>Maryam</span></h1>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800" class="typewriter">I'm a <span class="typewriter-text"></span></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">Front-End & Flutter Developer | Building modern, responsive, and high-performance solutions for Web and Mobile.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/maryam-mohamed-a8535b36a/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200"></i>
+                    </a>
+                    <a href="https://github.com/MaryamMohamed1" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"></i>
+                    </a>
+                    <a href="https://web.facebook.com/maryam.khalifa.39108/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"></i>
+                    </a>
+                </div>
+                <button onclick="window.open('assets/DOC-20260419-WA0004..pdf', '_blank')" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">Preview CV</button> 
+            </div>
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="assets/image1.png" alt="myphoto">
+            </div>
+        </div>
+    </section>
+    <!--section about-->
+    <section id="About" class="about-section">
+        <div class="about-wrapper">
+            
+            <div class="about-text-content">
+                <h2 class="wow-title" data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true">
+                    <span class="bg-text">ABOUT</span>
+                    <span class="front-text">About <span>Me</span></span>
+                </h2>
+                
+                <div class="glass-box" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200" data-aos-mirror="true">
+                    <p>
+                        I am a student specializing in <strong class="neon-highlight">Archaeological Information Systems</strong>, bridging the gap between ancient heritage and modern technology. My journey started with a deep passion for preserving history, which evolved into building dynamic digital experiences.
+                    </p>
+                    <p>
+                        As a <strong class="neon-highlight">Front-End & Flutter Developer</strong>, I do more than just write lines of code; I craft interactive User Interfaces (UI/UX) and modern applications. My ultimate goal is to combine technical precision with aesthetic vision to deliver flawless, high-performance projects.
+                    </p>
+                </div>
+
+                <div class="wow-icons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-mirror="true">
+                <div class="icon-circle"><i class="fa-solid fa-code"></i></div>
+                 <div class="icon-circle" style="animation-delay: 0.3s"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                 <div class="icon-circle" style="animation-delay: 0.6s"><i class="fa-solid fa-monument"></i></div>
+                </div>
+                <button class="neon-pulse-btn" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600" data-aos-mirror="true" onclick="window.location.href='#Projects'" >Explore My Projects</button>
+            </div>
+
+            <div class="about-image-wrapper" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300" data-aos-mirror="true">
+                <div class="neon-halo-bg"></div>
+                <img src="assets/image2.png" alt="Maryam Mohamed" class="floating-profile">
+            </div>
+
+        </div>
+    </section>
+</section>
+<!--skills section-->
+<section id="Skills" class="interactive-skills-section">
+        
+        <h2 class="wow-title" data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true">
+            <span class="bg-text">SKILLS</span>
+            <span class="front-text">My <span>Expertise</span></span>
+        </h2>
+
+        <div class="accordion-container" data-aos="zoom-in-up" data-aos-duration="1200" data-aos-mirror="true">
+            
+            <div class="skill-panel">
+                <div class="panel-bg-glow"></div>
+                
+                <div class="panel-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                
+                <div class="panel-content">
+                    <h3 class="panel-title">Mobile App Dev</h3>
+                    <p>Building cross-platform, high-performance applications with fluid animations.</p>
+                    <div class="panel-tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+                <div class="vertical-title">MOBILE DEV</div>
+            </div>
+
+            <div class="skill-panel">
+                <div class="panel-bg-glow"></div>
+                <div class="panel-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="panel-content">
+                    <h3 class="panel-title">Front-End Web</h3>
+                    <p>Crafting modern, responsive interfaces and pixel-perfect web experiences.</p>
+                    <div class="panel-tags">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+                <div class="vertical-title">FRONT-END</div>
+            </div>
+
+            <div class="skill-panel">
+                <div class="panel-bg-glow"></div>
+                <div class="panel-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="panel-content">
+                    <h3 class="panel-title">Interactive UI/UX</h3>
+                    <p>Designing scrollytelling experiences, 3D web effects, and engaging user flows.</p>
+                    <div class="panel-tags">
+                        <span>UI/UX</span>
+                        <span>Animations</span>
+                        <span>3D Effects</span>
+                    </div>
+                </div>
+                <div class="vertical-title">INTERACTIVE</div>
+            </div>
+
+            <<div class="skill-panel">
+                <div class="panel-bg-glow"></div>
+                <div class="panel-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div class="panel-content">
+                    <h3 class="panel-title">Business & Tech</h3>
+                    <p>Bridging software development with business goals. Trained in business development and product strategy.</p>
+                    <div class="panel-tags">
+                        <span>Business Dev</span>
+                        <span>Product Strategy</span>
+                        <span>Agile</span>
+                    </div>
+                </div>
+                <div class="vertical-title">BUSINESS TECH</div>
+            </div>
+        </div>
+    </section>
+    <!--project section-->
+    <section id="Projects" class="premium-projects-section">
+        
+        <h2 class="wow-title" data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true">
+            <span class="bg-text">WORK</span>
+            <span class="front-text">Selected <span>Projects</span></span>
+        </h2>
+
+        <div class="project-filters" data-aos="fade-up" data-aos-duration="1000">
+            <button class="filter-btn active" onclick="filterProjects(event, 'all')">All Work</button>
+            <button class="filter-btn" onclick="filterProjects(event, 'flutter')">Flutter Apps</button>
+            <button class="filter-btn" onclick="filterProjects(event, 'web')">Web Development</button>
+        </div>
+
+        <div class="projects-showcase-container">
+            
+            <div class="project-row filter-flutter" data-aos="fade-up">
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="assets/vibetrip.png" alt="VibeTrip App">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">VibeTrip App</h3>
+                    <p class="project-desc">A smart travel companion featuring mood-based search algorithms and a highly responsive UI built with Flutter.</p>
+                    <div class="project-tech-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                    <a href="https://github.com/MaryamMohamed1/vipetrip-flutter.git" target="_blank" class="project-link-btn">View App Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+            <div class="project-row reverse filter-flutter" data-aos="fade-up">
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="assets/wajih.png" alt="Wagih App">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">Wagih | واجه</h3>
+                    <p class="project-desc">An innovative Flutter application focused on professional identity and digital presence with a seamless user experience.</p>
+                    <div class="project-tech-tags"><span>Flutter</span><span>UI/UX</span><span>API Integration</span></div>
+                    <a href="#" class="project-link-btn">View App Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+            <div class="project-row filter-flutter" data-aos="fade-up">
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="assets/kahk.png" alt="Kahk App">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">03</div>
+                    <h3 class="project-title">Kahk El Eid Delivery</h3>
+                    <p class="project-desc">A festive E-commerce solution for seasonal products, optimized for high performance and smooth checkout flows.</p>
+                    <div class="project-tech-tags"><span>Flutter</span><span>State Management</span><span>E-commerce</span></div>
+                    <a href="#" class="project-link-btn">View App Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+            <div class="project-row reverse filter-web" data-aos="fade-up">
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="assets/history web.png" alt="Forgotten Treasures">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">04</div>
+                    <h3 class="project-title">Forgotten Treasures</h3>
+                    <p class="project-desc">A flagship archaeological project documenting lesser-known Egyptian monuments through immersive digital storytelling.</p>
+                    <div class="project-tech-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Archaeological Info Systems</span></div>
+                    <a href="#" class="project-link-btn">Explore Site <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+            <div class="project-row filter-web" data-aos="fade-up">
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="assets/manial.png" alt="Manial Palace">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">05</div>
+                    <h3 class="project-title">Manial Palace Museum</h3>
+                    <p class="project-desc">A digital interactive guide for the Prince Mohammed Ali Palace, bridging heritage with modern web accessibility.</p>
+                    <div class="project-tech-tags"><span>Front-End</span><span>UI/UX</span><span>Heritage Tech</span></div>
+                    <a href="https://github.com/MaryamMohamed1/manial-palace-project.git" target="_blank" class="project-link-btn">Explore Museum <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+            <div class="project-row reverse filter-web" data-aos="fade-up">
+                <div class="project-visual">
+                    <div class="visual-overlay"></div>
+                    <img src="assets/mawy.png" alt="Mawy AI">
+                </div>
+                <div class="project-info">
+                    <div class="project-number">06</div>
+                    <h3 class="project-title">Mawy | ماوي</h3>
+                    <p class="project-desc">An award-winning project from an AI Hackathon, integrating advanced data logic with a sleek, futuristic dashboard.</p>
+                    <div class="project-tech-tags"><span>AI Integration</span><span>Tailwind CSS</span><span>React/Web</span></div>
+                    <a href="https://github.com/MaryamMohamed1/hackathon-cairo-uni.git" target="_blank" class="project-link-btn">View Case Study <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <!--contact section-->
+        <section id="Contact" class="contact-section">
+        <h2 class="wow-title" data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true">
+            <span class="bg-text">CONTACT</span>
+            <span class="front-text">Let's <span>Talk</span></span>
+        </h2>
+
+        <div class="contact-wrapper">
+            
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="1200">
+                <h3 class="contact-greeting">Have an awesome idea?</h3>
+                <p class="contact-text">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Let's build something amazing together!
+                </p>
+                
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-details">
+                            <h4>Email Me</h4>
+                            <p><a href="mailto:ana.maryam.mohamed2006@gmail.com" class="contact-link">ana.maryam.mohamed2006@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="info-details">
+                            <h4>WhatsApp</h4>
+                            <p>+20 112 786 9941</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-details">
+                            <h4>Location</h4>
+                            <p>6 October City, Egypt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container" data-aos="fade-left" data-aos-duration="1200">
+                <div class="form-bg-glow"></div>
+                <form class="glass-form" id="contactForm" onsubmit="event.preventDefault();">                    
+                    <div class="input-group">
+                        <!-- ضيفنا name="name" -->
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="input-line"></div>
+                    </div>
+
+                    <button type="submit" class="neon-pulse-btn send-btn" id="submitBtn">
+                        Send Message <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Maryam <span>.</span></h2>
+                <p>Bridging the gap between ancient heritage and modern technology. Creating seamless digital experiences with Flutter and Front-End.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Me</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-angle-right"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-angle-right"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Let's Connect</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/maryam-mohamed-a8535b36a/" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/MaryamMohamed1" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-line"></div>
+            <p>&copy; 2026 Designed & Built <i class="fa-solid fa-heart pulse-heart"></i> by <span>Maryam Mohamed</span></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120, 
+            mirror: true 
+        });
+        function filterProjects(e, category) {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    e.target.classList.add('active');
+    const projects = document.querySelectorAll('.project-row');
+    
+    projects.forEach(project => {
+        if (category === 'all') {
+            project.style.display = 'flex';
+            setTimeout(() => {
+                project.style.opacity = '1';
+                project.style.transform = 'scale(1)';
+            }, 10);
+        } else {
+            if (project.classList.contains('filter-' + category)) {
+                project.style.display = 'flex';
+                setTimeout(() => {
+                    project.style.opacity = '1';
+                    project.style.transform = 'scale(1)';
+                }, 10);
+            } else {
+                project.style.opacity = '0';
+                project.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    project.style.display = 'none';
+                }, 400); 
+            }
+        }
+    });
+    
+    setTimeout(() => {
+        AOS.refresh();
+    }, 500);
+}
+    </script>
+
+</body>
+</html>

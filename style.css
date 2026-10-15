@@ -191,10 +191,11 @@ section {
 }
 
 .main-container .image img {
-    width: 120%;
-    height: 120%;
-    object-fit: cover;
-    object-position: 150% center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    object-fit: cover; 
+    object-position: center top;
 }
 
 @media (max-width: 884px) {
@@ -444,6 +445,122 @@ section {
     transform: scale(1.1);
     opacity: 0.7;
     filter: blur(120px);
+}
+/* ========================================= */
+/* USP Statement in About Section            */
+/* ========================================= */
+.usp-statement {
+    font-size: 1.25rem !important;
+    color: #ff5e8e !important; /* لون بينك فاتح عشان ينطق */
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 4px solid #99405f; /* خط نيون على الشمال */
+    text-shadow: 0 0 10px rgba(153, 64, 95, 0.3);
+}
+
+/* خط فاصل خفيف بين الـ USP وباقي الكلام */
+.usp-divider {
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+
+/* ========================================= */
+/* Premium Services Section                  */
+/* ========================================= */
+.services-section {
+    width: 100%;
+    min-height: 80vh;
+    background-color: #050505;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.services-container {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* بيقسمهم لـ 3 عواميد وبيخليهم متجاوبين */
+    gap: 40px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+/* استخدام نفس كلاس الكارت الزجاجي مع تعديلات للخدمات */
+.service-card {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease;
+    border-bottom: 3px solid transparent; /* خط مخفي هيظهر في الهوفر */
+}
+
+/* حركة الكارت لما الماوس ييجي عليه */
+.service-card:hover {
+    transform: translateY(-15px);
+    border-bottom: 3px solid #ff5e8e; /* خط نيون من تحت */
+    box-shadow: 0 15px 30px rgba(153, 64, 95, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(153, 64, 95, 0.1);
+    border: 1px solid rgba(153, 64, 95, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #ff5e8e;
+    margin-bottom: 25px;
+    transition: 0.4s ease;
+}
+
+/* الأيقونة بتلف وتنور لما نقف على الكارت */
+.service-card:hover .service-icon {
+    background: #99405f;
+    color: white;
+    transform: rotateY(360deg);
+    box-shadow: 0 0 15px #99405f;
+}
+
+.service-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.service-card p {
+    color: #a0a0a0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* ========================================= */
+/* تظبيط الموبايل للخدمات                    */
+/* ========================================= */
+@media (max-width: 884px) {
+    .services-container {
+        gap: 30px;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+    }
 }
 
 @keyframes floatImage {
@@ -1286,6 +1403,74 @@ section {
     animation: heartbeat 1.5s infinite;
 }
 
+/* ========================================= */
+/* About Toolkit Styles                      */
+/* ========================================= */
+.about-toolkit {
+    margin-bottom: 40px;
+}
+
+.toolkit-title {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(153, 64, 95, 0.5);
+}
+
+.toolkit-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.toolkit-tags span {
+    background: rgba(255, 255, 255, 0.03);
+    color: #cccccc;
+    padding: 8px 16px;
+    border-radius: 30px; /* شكل بيضاوي شيك */
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(153, 64, 95, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    cursor: default;
+    backdrop-filter: blur(5px);
+}
+
+.toolkit-tags span i {
+    color: #99405f;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+/* تأثير الماوس (Hover) */
+.toolkit-tags span:hover {
+    background: rgba(153, 64, 95, 0.15);
+    color: white;
+    border-color: #ff5e8e;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(153, 64, 95, 0.3);
+}
+
+.toolkit-tags span:hover i {
+    color: #ff5e8e;
+    transform: scale(1.1);
+}
+
+/* تظبيط للموبايل */
+@media (max-width: 884px) {
+    .toolkit-tags {
+        justify-content: center;
+    }
+    .toolkit-title {
+        text-align: center;
+    }
+}
 @keyframes heartbeat {
     0% { transform: scale(1); }
     15% { transform: scale(1.3); text-shadow: 0 0 10px #99405f; }
